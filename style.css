@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.hero-section{
+    background-image: url(assets/images/bg.jpg);
+    background-size: max(1200px , 100vw);
+    background-position: center center;
+    height: 97vh;
+    position: relative;
+}
+
+.hero-section .background{
+    width: 100%;
+    height: 97vh;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+}
+
+/* Navbar section */
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    position: relative;
+    z-index: 18;
+}
+
+.nav-right{
+    display: flex;
+    height: 32px;
+    width: 14.5vw;
+    justify-content: space-between;  
+}
+
+.language{
+    border: 1px solid rgb(133, 133, 133);
+    background: rgba(22, 22, 22, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 126px;
+    border-radius: 0.25rem;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+.sign-in {
+    width: 76px;
+    height: 32px;
+    background-color: rgb(229,9,20);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+/* Heading section */
+.heading{
+    z-index: 5;
+    position: relative;
+    width: 85vw;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+.heading p:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1.4rem 0;
+    text-align: center;
+}
+.heading p:nth-child(3){
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.get-started{
+    margin: 1rem auto 0;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+.get-started input{
+    padding: 1rem;
+    width: 60%;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 0.25rem;
+}
+
+.get-started button{
+    background: rgb(229,9,20);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
+    border: 0;
+    width: auto;
+}
+
+.line{
+   background-color: rgba(169, 169, 169, 0.235);
+    height: 0.5rem;
+}
+
+/* Sections */
+.section{
+    padding: 3.5rem 0;
+    width: 78vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-text{
+    width: 40vw;
+    padding-left: 0.25rem;
+}
+.section-heading{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.section-para{
+    margin-top: 1rem;
+    font-size: 1.5rem;   
+}
+
+/* section 1 */
+.section1-tv img{
+    padding-left: 0.25rem;
+    width: 40vw;
+}
+.section1-tv video{
+    position: absolute;
+    top: 118%;
+    right: 14%;
+    z-index: -5;
+}
+
+/* Section 2 */
+.download-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    border-radius: 1rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    padding: 0.75rem 1rem;
+    background-color: black;
+    width: 21vw;
+    position: absolute;
+    left: 19%;
+    bottom: -142%;
+}
+
+.download-title h5{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+}
+.download-title p{
+    color: #0071eb;
+    font-size: 0.875rem;
+}
+
+/* Section 3 */
+.section3-tv img{
+    padding-left: 0.5rem;
+    width: 40vw;
+}
+.section3-tv video{
+    position: absolute;
+    top: 270%;
+    right: 18%;
+    z-index: -26;
+    object-fit: contain;
+}
+
+/* FAQs */
+.faqs{
+    padding: 4.5rem 0;
+    width: 78vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faqs h2{
+    margin-bottom: 1.5rem;
+}
+.questions{
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.email{
+    width: 80%;
+    margin: 2.75rem auto 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.email p{
+    font-size: 1.25rem;
+}
+
+/* Footer */
+footer{
+    width: 78vw;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.helpline{
+    font-size: 1rem;
+    color: #ffffffb3;
+    margin: 1rem 0;
+}
+.helpline a{
+    color: rgb(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+.links li{
+    font-size: 0.875rem;
+    list-style: none;
+    color: rgb(255, 255, 255, 0.7);
+    text-decoration: underline;
+    margin: 1rem 0 0 ;
+    width: 25%;
+}
+
+.footer .language{
+    margin: 1.5rem 0;
+    padding: 0.25rem 0;
+}
+
+.country{
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}
